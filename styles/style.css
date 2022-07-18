@@ -142,3 +142,42 @@ hr {
     font-size: 14.6913px;
     font-weight: 600;
 }
+
+/* media queri */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .course {}
+
+    .container {
+        width: 100%;
+    }
+
+    .player {
+        justify-content: center;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width:689px) and (max-width:1023px) {
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        width: 100%;
+    }
+}
